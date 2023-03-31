@@ -2,7 +2,7 @@
 
 本文主要介绍如何对各模组管脚功能进行配置、以及介绍电池曲线配置方法。 🦄 `<br />`
 
-**[👉 下载PDF文档 👈](https://github.com/)**
+**[👉 下载PDF文档 👈](https://github.com/Bingboom/S720-Application-Guide/Neoway_S720应用配置指南_V1.0)**
 
 # 概述
 
