@@ -4,7 +4,7 @@ S720是一款基于紫光展锐平台的LTE无线通信智能模组，支持制�
 
 # 模组开机
 
-![1680228961326](image/TEMPLATE/1680228961326.png)
+![1680234558344](image/TEMPLATE/1680234558344.png)
 
 在按键中，POWER ON按键为开机/关机按键，S720开发套件上电后，长按POWER ON键约3秒即可使模块开机。
 
@@ -78,6 +78,10 @@ build-unisoc-wayland\\tmp-unisoc_wayland-glibc\\work\\sl8541e_emmc_marlin2-uniso
 
 ### GPIO介绍
 
+GPIO是通用输入输出端口的简称，简单来说就是可控制的引脚，芯片的GPIO引脚与外部设备连接起来，从而实现与外部设备进行通讯、控制以及数据采集的功能。
+
+### Pinmap配置
+
 在配置pinmap之前首先要通过原理图确认模块PIN脚对应的GPIO序号，本文以模块的PIN90脚为例，如图，对应的gpio为gpio89。
 
 ![1680230840150](image/TEMPLATE/1680230840150.png)
@@ -85,8 +89,6 @@ build-unisoc-wayland\\tmp-unisoc_wayland-glibc\\work\\sl8541e_emmc_marlin2-uniso
 如果要将该管脚配置成GPIO功能，首先要查找手册《S720-管脚定义文档-V1.1.xlsx》。
 
 ![1680230855097](image/TEMPLATE/1680230855097.png)
-
-### Pinmap配置
 
 由图中可以看出，gpio89对应的Pin Name是RTCK_LTE，可以用作4种功能，Function 3为gpio功能，我们要使用的是gpio功能，在pinmap文件中根据Pin Name找到对应的配置项进行修改即可。
 
