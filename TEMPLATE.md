@@ -84,7 +84,6 @@ build-unisoc-wayland\\tmp-unisoc_wayland-glibc\\work\\sl8541e_emmc_marlin2-uniso
 
 如果要将该管脚配置成GPIO功能，首先要查找手册《S720-管脚定义文档-V1.1.xlsx》。
 
-
 ![1680230855097](image/TEMPLATE/1680230855097.png)
 
 ### Pinmap配置
@@ -680,6 +679,7 @@ uart1: serial@70100000 {
 #### pinmap配置
 
 如图，我们所要使用的脚U2TXDG0和U2TXDG0；
+
 ![1680231793906](image/TEMPLATE/1680231793906.png)
 
 根据手册《S720-管脚定义文档-V1.1》，对应在pinmap中根据PinName找到对应的配置项进行修改；
